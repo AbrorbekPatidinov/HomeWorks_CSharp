@@ -27,10 +27,18 @@ namespace Console_C_
        }
        return result;
      }
+     static void create_array_8() {
+      int size = 8;
+      int[] array = new int[size];
+      Random random = new Random();
+      for (int i = 0; i < size; i++) {
+        array[i] = random.Next(0, size);
+        System.Console.WriteLine(" {0} ", array[i]);
+      }
+     }
      static void Main(string[] args) 
      {
-       int summNumbers = SumOfNumbersInDigits();
-       System.Console.WriteLine("Answer is: " + summNumbers); 
+       create_array_8();
      }
    }
 }
