@@ -1,0 +1,15 @@
+D:\Console_C#\bin\Debug\net7.0\Console_C#.exe
+D:\Console_C#\bin\Debug\net7.0\Console_C#.deps.json
+D:\Console_C#\bin\Debug\net7.0\Console_C#.runtimeconfig.json
+D:\Console_C#\bin\Debug\net7.0\Console_C#.dll
+D:\Console_C#\bin\Debug\net7.0\Console_C#.pdb
+D:\Console_C#\obj\Debug\net7.0\Console_C#.csproj.AssemblyReference.cache
+D:\Console_C#\obj\Debug\net7.0\Console_C#.GeneratedMSBuildEditorConfig.editorconfig
+D:\Console_C#\obj\Debug\net7.0\Console_C#.AssemblyInfoInputs.cache
+D:\Console_C#\obj\Debug\net7.0\Console_C#.AssemblyInfo.cs
+D:\Console_C#\obj\Debug\net7.0\Console_C#.csproj.CoreCompileInputs.cache
+D:\Console_C#\obj\Debug\net7.0\Console_C#.dll
+D:\Console_C#\obj\Debug\net7.0\refint\Console_C#.dll
+D:\Console_C#\obj\Debug\net7.0\Console_C#.pdb
+D:\Console_C#\obj\Debug\net7.0\Console_C#.genruntimeconfig.cache
+D:\Console_C#\obj\Debug\net7.0\ref\Console_C#.dll
