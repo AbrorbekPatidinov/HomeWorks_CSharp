@@ -36,9 +36,24 @@ namespace Console_C_
         System.Console.WriteLine(" {0} ", array[i]);
       }
      }
+     static void create_array_with_three_digits() {
+       int size = 3, k = 0, sum = 0;
+       int[] array = new int[size]; 
+       Random random = new Random();
+       System.Console.WriteLine("Array is: ");
+       for (int i = 0; i < size; i++) {
+        array[i] = random.Next(100, 999);
+        System.Console.Write("{0} ", array[i]);
+       }
+       System.Console.WriteLine();
+       foreach (int numbers in array) {
+         if (numbers % 2 == 0) { k++; sum += numbers; }
+       }
+       System.Console.WriteLine("Count of even numbers: {0}", k);
+     }
      static void Main(string[] args) 
      {
-       create_array_8();
+       create_array_with_three_digits();
      }
    }
 }
