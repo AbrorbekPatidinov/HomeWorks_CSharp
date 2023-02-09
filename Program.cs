@@ -66,9 +66,30 @@ namespace Console_C_
        }
        System.Console.WriteLine("Count of uneven numbers: {0}", k);
      }
+     static void create_array_find_max_and_min_elements() {
+       int i, n;
+       int[] m = new int[100];
+       Random random = new Random();
+       n = 11;
+       System.Console.WriteLine("Array is: ");
+       for (i = 0; i < n; i++)
+       {
+          m[i] = random.Next(0, 50);
+          Console.Write(m[i] + " ");
+       }
+       var min = m[0];
+       var max = m[0];
+       for (i = 0; i < n; i++) {
+        if (m[i] < min) min = m[i];
+        else if (m[i] > max) max = m[i];
+       }
+       System.Console.WriteLine();
+       System.Console.WriteLine("Minimal element of array: " + min);
+       System.Console.WriteLine("Maximal element of array: " + max);
+     }
      static void Main(string[] args) 
      {
-       create_array_with_rand_numbers_count_uneven_nums();
+       create_array_find_max_and_min_elements(); 
      }
    }
 }
