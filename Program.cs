@@ -97,9 +97,17 @@ namespace Console_C_
        System.Console.WriteLine("Minimal element of array: " + min);
        System.Console.WriteLine("Maximal element of array: " + max);
      }
+
+     // Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+     static void read_numbers_and_count_if_numbers_higher_than_0() {
+      Console.Write("Enter the numbers (with pass): ");
+      int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+      int count = arr.Count(x => x > 0);
+      Console.WriteLine($"Кол-во элементов > 0: " + count);
+     }
      static void Main(string[] args) 
      {
-       create_array_find_max_and_min_elements(); 
+       read_numbers_and_count_if_numbers_higher_than_0();
      }
    }
 }
