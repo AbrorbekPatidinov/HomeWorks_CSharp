@@ -144,10 +144,31 @@ namespace Console_C_
         }
       } 
      }
-
+     // Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+     static void create_two_dimensional_array_and_read_positions() {
+      int a, b;
+      int[,] array = new int[5, 5];
+      for (int y = 0; y < array.GetLength(0); y++) {
+        for (int x = 0; x < array.GetLength(1); x++) {
+          System.Console.WriteLine("Position Y: " + y + " Position X: " + x);
+          array[y, x] = Convert.ToInt32(Console.ReadLine());
+        }
+      }
+      for (int y = 0; y < array.GetLength(0); y++) {
+        for (int x = 0; x < array.GetLength(1); x++) {
+          System.Console.Write(array[x, y] + "\t  ");
+          System.Console.WriteLine();
+        }
+      }
+      System.Console.WriteLine("Enter coordinates: ");
+      a = Convert.ToInt32(Console.ReadLine());
+      b = Convert.ToInt32(Console.ReadLine());
+      if (a > 5 && b > 5) System.Console.WriteLine("These numbers don't exists !");
+      else { object? c = array.GetValue(a, b); System.Console.WriteLine("Answer: " + c); }
+     }
      static void Main(string[] args) 
      {
-       create_two_dimensional_array_with_random_numbers();
+       create_two_dimensional_array_and_read_positions();
      }
    }
 }
