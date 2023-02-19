@@ -124,9 +124,30 @@ namespace Console_C_
  
       Console.WriteLine($"Intersection of two lines answer: ({x};{y})");
      }
+     // Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами. m = 3, n = 4.
+     static void create_two_dimensional_array_with_random_numbers() {
+      int[,] array = new int[3, 4];
+      Random random = new Random();
+      for (int y = 0; y < array.GetLength(0); y++)
+      {
+        for (int x = 0; x < array.GetLength(1); x++)
+        {
+          array[y, x] = random.Next(-100, 100);
+        }
+      }
+      System.Console.WriteLine();
+      for (int y = 0; y < array.GetLength(0); y++)
+      {
+        for (int x = 0; x < array.GetLength(1); x++)
+        {
+          System.Console.Write(array[y, x] + "\t");
+        }
+      } 
+     }
+
      static void Main(string[] args) 
      {
-       intersection_of_two_lines_equations();
+       create_two_dimensional_array_with_random_numbers();
      }
    }
 }
