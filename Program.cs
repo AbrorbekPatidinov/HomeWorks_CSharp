@@ -166,9 +166,27 @@ namespace Console_C_
       if (a > 5 && b > 5) System.Console.WriteLine("These numbers don't exists !");
       else { object? c = array.GetValue(a, b); System.Console.WriteLine("Answer: " + c); }
      }
+     // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.   
+     static void find_arithmetic_mean_of_numbers_array() {
+      int i, t, srAR = 0, colchetn = 0;
+      int[,] array = new int[3, 3] {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9},
+        };
+        for (i = 0; i < 3; i++) {
+         
+          for (t = 0; t < 3; t++) {
+            srAR += array[t, i];
+            colchetn += (array[t, i] % 2 == 0) ? 1: 0;
+          }
+          System.Console.WriteLine($"Arithmetic mean column: {i + 1} = {(float) srAR / 3}");
+          System.Console.WriteLine($"Number of even column elements: {i + 1} = {colchetn}");
+        }
+     }
      static void Main(string[] args) 
      {
-       create_two_dimensional_array_and_read_positions();
+      find_arithmetic_mean_of_numbers_array();
      }
    }
 }
