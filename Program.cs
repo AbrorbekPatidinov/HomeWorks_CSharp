@@ -184,9 +184,26 @@ namespace Console_C_
           System.Console.WriteLine($"Number of even column elements: {i + 1} = {colchetn}");
         }
      }
+     // array of strings forms an array of strings whose length is less than or equal to 3 characters
+     static void array_of_strings_forms_an_array_of_strings_whose_length_is_less_or_equal_to_3_charachters() {
+      string[] array;
+      System.Console.WriteLine("Enter an array of strings separated by commas: ");
+      string? str = Console.ReadLine();
+      array = str.Split(',');
+      var result = new string[array.Length];
+      var realSize = 0;
+      foreach (var value in array) {
+        if (value.Length > 3) {
+          result[realSize] = value;
+          realSize++;
+        }
+      }
+      System.Console.WriteLine(string.Join(Environment.NewLine, result, 0, realSize));
+      Console.ReadKey(true);
+     }
      static void Main(string[] args) 
      {
-      find_arithmetic_mean_of_numbers_array();
+      array_of_strings_forms_an_array_of_strings_whose_length_is_less_or_equal_to_3_charachters();
      }
    }
 }
